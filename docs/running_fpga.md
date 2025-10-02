@@ -5,11 +5,13 @@ The FPGAs are hosted as back-end nodes of NEXTGenIO and currently accessible via
 | Node  | FPGAs | 
 | ------------- | ------------- | 
 | nextgenio-amd01  | Alveo U280 and Tenstorrent p150 |
-[//] # (| nextgenio-amd01  | Alveo U280 and NVidia A100 GPU |)  
 | nextgenio-amd02  |  Tenstorrent p150 and ADM-PA100 |
-#| nextgenio-amd02  |  VCK5000 and ADM-PA100 |
 | nextgenio-amd03  | Stratix-10 MX  and Alveo U250 | 
 | nextgenio-icx | Unallocated |
+
+
+<!--| nextgenio-amd01  | Alveo U280 and NVidia A100 GPU |-->
+<!--| nextgenio-amd02  |  VCK5000 and ADM-PA100 |-->
 
 ## Xilinx environment
 
