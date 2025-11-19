@@ -17,13 +17,21 @@ username@localhost:~$ ssh -J gateway-username@gateway.epcc.ed.ac.uk nextgenio-us
 
 > It is possible to automate the jump step by setting this up in your ssh .config file as a proxyjump
 
+> You may need to use an ssh key to connect, this can be specified using the -i flag to ssh
+
 ### Desktop access
 
-<img src="/docs/images/x2go_settings.png" width="400" height="400" align="right"/>
+<img src="/docs/images/x2go_setup.png" width="400" height="400" align="right"/>
 
 The lightweight XFCE desktop is installed on the front-end of the testbed system, which is especially useful for programming FPGAs as much of the tooling has a graphical component to it. The front-end is also running X2GO which tends to provide much better performance than vanilla X forwarding. Therefore we strongly suggest accessing the desktop via X2GO, with users just needing to install the client program which is available [here](https://wiki.x2go.org/doku.php/download:start). 
 
-Once the client is installed, create a new profile with settings matching those as illustrated below (assuming that you use the same username and password for both _gateway_ and the _NEXTGenIO_ node.
+To use this you should setup a port forward connection:
+```console
+username@localhost:~$ ssh -L 2201:nextgenio-login`:22 -J gateway-username@gateway.epcc.ed.ac.uk nextgenio-username@nextgenio-login1
+[nextgenio-username@nextgenio-login1 ~]$
+```
+
+Then setup an XFCE connection but creating a new profile with settings matching those as illustrated in the picture.
 
 >**NOTE:**  
 > Whilst it is possible to run the individual graphical tools directly via X2GO, we strongly suggest doing this via the XFCE desktop environment as find that this provides a much better user experience.
