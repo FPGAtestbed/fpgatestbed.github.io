@@ -27,7 +27,7 @@ The lightweight XFCE desktop is installed on the front-end of the testbed system
 
 To use this you should setup a port forward connection:
 ```console
-username@localhost:~$ ssh -L 2201:nextgenio-login`:22 -J gateway-username@gateway.epcc.ed.ac.uk nextgenio-username@nextgenio-login1
+username@localhost:~$ ssh -L 5900:nextgenio-login1:5900 -J gateway-username@gateway.epcc.ed.ac.uk nextgenio-username@nextgenio-login1
 [nextgenio-username@nextgenio-login1 ~]$
 ```
 
